@@ -1,0 +1,373 @@
+# IG50 数据集目录（共 331 个）
+
+> 本地路径相对数据根目录（以配置文件 `ig50_user_config.properties` 的 `server.data.dir` 为准，
+> 未指定时用缺省值：Windows `C:\ig50-data`，Linux `/ig50-data`）；`{股票代码}` 等占位符替换为实际代码（如 000001）。
+> 「文档锚点」用于拼接官方 LLM 文档：`https://ig50.com/md/{锚点}.md`；
+> 备选：按 `/` 拆分锚点，直接访问官网数据集说明页 `https://ig50.com/{page_key}.html?maodian={maodian}`，
+> 或在 https://ig50.com/search.html 按数据集名称检索直达。
+
+## 沪深京A股（135 个数据集）
+
+> 实时行情(3秒)、L2五档盘口、逐笔交易、历史K线、F10全档案
+
+| 数据集 | 本地路径 | 更新频率 | 文档锚点 |
+|---|---|---|---|
+| 沪深京A股列表 | `base/gplist` | 每天16点更新。 | index_gplist/gupiao-gplbjk-title |
+| 新股日历 | `all/xgrl` | 每天16点更新。 | index_gplist/gupiao-xgrl-title |
+| 指数、行业、概念树 | `base/it` | 每周六凌晨3点更新。 | index_gplist/index_tree_1 |
+| 根据指数、行业、概念找股票 | `time/indextree/{指数、行业、概念代码}` | 每周六凌晨3点更新。 | index_gplist/index_tree_2 |
+| 根据股票找指数、行业、概念 | `time/iii/{股票代码}` | 每周六凌晨3点更新。 | index_gplist/index_tree_3 |
+| 涨停股池 | `time/zdtgc/ztgc/{日期}` | 交易时间段每10分钟更新。 | index_gplist/zdgc-ztgc-title |
+| 跌停股池 | `time/zdtgc/dtgc/{日期}` | 交易时间段每10分钟更新。 | index_gplist/zdgc-dtgc-title |
+| 强势股池 | `time/zdtgc/qsgc/{日期}` | 交易时间段每10分钟更新。 | index_gplist/zdgc-qsgc-title |
+| 次新股池 | `time/zdtgc/cxgc/{日期}` | 交易时间段每10分钟更新。 | index_gplist/zdgc-cxgc-title |
+| 炸板股池 | `time/zdtgc/zbgc/{日期}` | 交易时间段每10分钟更新。 | index_gplist/zdgc-zbgc-title |
+| 公司简介 | `time/f10/info/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-info-title |
+| 所属指数 | `time/f10/index/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-index-title |
+| 所属板块 | `time/f10/ssbk/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-ssbk-title |
+| 经营范围 | `time/f10/jyfw/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-jyfw-title |
+| 主营业务 | `time/f10/zyyw/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-zyyw-title |
+| 行业背景 | `time/f10/hybj/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-hybj-title |
+| 核心竞争力 | `time/f10/hxjzl/{股票代码}` | 每天17:30更新。 | index_gsgk/f10-hxjzl-title |
+| 概念题材板块 | `time/f10/hxtc/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-hxtc-title |
+| 题材详情 | `time/f10/tcxq/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-tcxq-title |
+| 名称变动 | `time/f10/mcbg/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-mcbg-title |
+| 并购重组 | `time/f10/bgcz/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-bgcz-title |
+| 参股控股 | `time/f10/cgkg/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-cgkg-title |
+| 主营构成 | `time/f10/maincompose/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-maincompose-title |
+| 经营评述 | `time/f10/bizreview/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-bizreview-title |
+| 员工竞争力 | `time/f10/employee/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-employee-title |
+| 业务竞争力 | `time/f10/businesscomp/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-businesscomp-title |
+| 研发投入 | `time/f10/rdinput/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-rdinput-title |
+| 研发人员 | `time/f10/rdstaff/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-rdstaff-title |
+| 客户及供应商 | `time/f10/custsupp/{股票代码}` | 每天17:30更新。 | index_gsgk/gsgk-custsupp-title |
+| 十大股东 | `time/f10/zygd/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-zygd-title |
+| 十大股东（详） | `time/f10/sdgd/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-sdgd-title |
+| 十大流通股东 | `time/f10/zygdlt/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-zygdlt-title |
+| 十大流通股东（详） | `time/f10/sdhltgd/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-sdhltgd-title |
+| 股东变化趋势 | `time/f10/gdbh/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-gdbh-title |
+| 基金持股 | `time/f10/jjcg/{股票代码}` | 每周六9点更新。 | index_gdgb/f10-jjcg-title |
+| 股东人数 | `time/f10/gdrs/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-gdrs-title |
+| 机构持仓 | `time/f10/jgcc/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-jgcc-title |
+| 机构明细 | `time/f10/jgmx/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-jgmx-title |
+| 沪深港通持股 | `time/f10/hsgtcg/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-hsgtcg-title |
+| 解禁限售 | `time/f10/jjxs/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-jjxs-title |
+| 股本结构 | `time/f10/gbjg/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-gbjg-title |
+| 历届高管成员 | `time/f10/gg/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-gg-title |
+| 高管列表 | `time/f10/gsgg/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-gsgg-title |
+| 管理层简介 | `time/f10/glcjj/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-glcjj-title |
+| 高管持股变动 | `time/f10/ggcgbd/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-ggcgbd-title |
+| 高管持股交易 | `time/f10/ggcgbdtrade/{股票代码}` | 每天17:30更新。 | index_gdgb/gdgb-ggcgbdtrade-title |
+| 历届董事会成员 | `time/f10/ds/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-ds-title |
+| 历届监事会成员 | `time/f10/js/{股票代码}` | 每天17:30更新。 | index_gdgb/f10-js-title |
+| 财务指标 | `time/f10/fi/{股票代码}` | 每天17:30更新。 | index_cwfx/f10-fi-title |
+| 近一年各季度利润 | `time/f10/pf/{股票代码}` | 每天17:30更新。 | index_cwfx/f10-pf-title |
+| 近一年各季度现金流 | `time/f10/cf/{股票代码}` | 每天17:30更新。 | index_cwfx/f10-cf-title |
+| 资产负债表 | `time/f10/balance/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-balance-title |
+| 利润表 | `time/f10/income/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-income-title |
+| 现金流量表 | `time/f10/cashflow/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-cashflow-title |
+| 资产负债与利润占比 | `time/f10/finratio/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-finratio-title |
+| 每股收益 | `time/f10/mainindexps/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexps-title |
+| 成长能力 | `time/f10/mainindexgrowth/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexgrowth-title |
+| 盈利能力 | `time/f10/mainindexprofit/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexprofit-title |
+| 营运能力 | `time/f10/mainindexop/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexop-title |
+| 现金质量 | `time/f10/mainindexquality/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexquality-title |
+| 风险指标 | `time/f10/mainindexrisk/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-mainindexrisk-title |
+| 杜邦分析（核心指标） | `time/f10/dupontcore/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-dupontcore-title |
+| 杜邦分析（资产负债） | `time/f10/dupontbs/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-dupontbs-title |
+| 杜邦分析（利润） | `time/f10/dupontis/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-dupontis-title |
+| 杜邦比较 | `time/f10/dbfx/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-dbfx-title |
+| 评级统计 | `time/f10/pjtj/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-pjtj-title |
+| 机构预测 | `time/f10/jgyc/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-jgyc-title |
+| 预测统计 | `time/f10/yctj/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-yctj-title |
+| 预测明细 | `time/f10/ycmx/{股票代码}` | 每天17:30更新。 | index_cwfx/cwfx-ycmx-title |
+| 近年分红 | `time/f10/share/{股票代码}` | 每天17:30更新。 | index_fhrz/f10-share-title |
+| 近年增发 | `time/f10/zf/{股票代码}` | 每天17:30更新。 | index_fhrz/f10-zf-title |
+| 融资融券标的股 | `base/rzrqGpList` | 每天上午8:50更新。 | index_fhrz/rzrq-cfg-title |
+| 融资融券历史走势 | `time/rzrq/{股票代码}` | 每天上午8:50更新。 | index_fhrz/rzrq-lszs-title |
+| 派现与募资对比 | `time/pxymz/{股票代码}` | 每天20:30更新。 | index_fhrz/rzrq-pxymz-title |
+| 质押明细 | `time/zhiya/{股票代码}` | 每天20:30更新。 | index_fhrz/rzrq-zhiya-title |
+| 回购数据全览 | `time/hgzl/{股票代码}` | 每天20:30更新。 | index_fhrz/rzrq-hgzl-title |
+| 并购重组一览 | `time/bgcz/{股票代码}` | 每天20:30更新。 | index_fhrz/rzrq-bgcz-title |
+| 分红影响 | `time/f10/dividend/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-dividend-title |
+| 历年分红融资 | `time/f10/dividendcompre/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-dividendcompre-title |
+| 分红排名 | `time/f10/dividendrank/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-dividendrank-title |
+| 增发明细 | `time/f10/dividendseo/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-dividendseo-title |
+| 配股 | `time/f10/pgmx/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-pgmx-title |
+| 优先股 | `time/f10/yxgxm/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-yxgxm-title |
+| 债券 | `time/f10/zqmx/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-zqmx-title |
+| 募集资金来源 | `time/f10/zbyzcjsjly/{股票代码}` | 每天17:30更新。 | index_fhrz/fhrz-zbyzcjsjly-title |
+| 股权质押 | `time/f10/gqzy/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-gqzy-title |
+| 对外担保 | `time/f10/wdb/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-wdb-title |
+| 诉讼仲裁 | `time/f10/sszc/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-sszc-title |
+| 监管措施 | `time/f10/jgcs/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-jgcs-title |
+| 成长性比较 | `time/f10/cz/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-cz-title |
+| 估值比较 | `time/f10/gz/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-gz-title |
+| 股价表现 | `time/f10/gjbx/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-gjbx-title |
+| 公司规模 | `time/f10/gsgm/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-gsgm-title |
+| 同行业个股排名 | `time/f10/glgghyggpm/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-glgghyggpm-title |
+| 同行业涨幅排名 | `time/f10/glgghyzfpm/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-glgghyzfpm-title |
+| 同地域个股排名 | `time/f10/glggtdyggpm/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-glggtdyggpm-title |
+| 同地域涨幅排名 | `time/f10/glggtdyzfpm/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-glggtdyzfpm-title |
+| 个股龙虎榜 | `time/f10/lhb/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-lhb-title |
+| 营业部买卖统计 | `time/f10/lhbyyb/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-lhbyyb-title |
+| 机构买卖统计 | `time/f10/lhbjg/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-lhbjg-title |
+| 机构评级 | `time/f10/jgpj/{股票代码}` | 每天17:30更新。 | index_gsds/gsds-jgpj-title |
+| 资金走势对照 | `time/zijin/zlzjzs/{股票代码}` | 每天20:00更新。 | index_zjgg/zjl-zlzjzs-title |
+| 资金流入趋势 | `time/zijin/zjlrqs/{股票代码}` | 每天20:00更新。 | index_zjgg/zjl-zjlrqs-title |
+| 阶段主力动向 | `time/zijin/jdzldx/{股票代码}` | 每天20:00更新。 | index_zjgg/zjl-jdzldx-title |
+| 历史成交分布 | `time/zijin/lscjfb/{股票代码}` | 每天20:00更新。 | index_zjgg/zjl-lscjfb-title |
+| 近年业绩预告 | `time/f10/ep/{股票代码}` | 每天17:30更新。 | index_zjgg/f10-ep-title |
+| 重大事项公告 | `time/gonggao/zdsx/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-zdsx-title |
+| 财务报告公告 | `time/gonggao/cwbg/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-cwbg-title |
+| 融资公告 | `time/gonggao/rzgg/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-rzgg-title |
+| 风险提示公告 | `time/gonggao/fxts/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-fxts-title |
+| 资产重组公告 | `time/gonggao/zccz/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-zccz-title |
+| 信息变更公告 | `time/gonggao/xxbg/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-xxbg-title |
+| 持股变动公告 | `time/gonggao/cgbd/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-cgbd-title |
+| 所有公告 | `time/history/gonggao/{股票代码}` | 每天20:00更新。 | index_zjgg/gonggao-all-title |
+| 项目进度 | `time/f10/zbyzxmjd/{股票代码}` | 每天17:30更新。 | index_zjgg/zjgg-zbyzxmjd-title |
+| 实时行情数据（3秒落盘） | `time/real/{股票代码}` | 交易时间段每10秒。 | index_realtime/rt-trace-title |
+| 买卖五档盘口（3秒落盘） | `time/real/trace/level5/{股票代码}` | 交易时间段每10秒。 | index_realtime/rt-trace-level5-title |
+| L2行情指标（3秒落盘） | `time/real/trace/l2sign/{股票代码}` | 交易时间段每10秒。 | index_realtime/rt-trace-l2Sign-title |
+| 当天逐笔交易 | `time/real/trace/onebyone/{股票代码}` | 交易时间段每2分钟。 | index_realtime/rt-trace-onebyone-title |
+| 集合竞价 | `time/real/trace/jhjj/{股票代码}` | 集合竞价时间段（时间段：9:15~9:30，14:47~15:30）每1分钟。 | index_realtime/rt-trace-jhjj-title |
+| 盘中异动 | `all/pzyd` | 交易时间段每1分钟。 | index_realtime/rt-trace-pzyd-title |
+| 当天分时成交 | `time/real/trace/timedeal/{股票代码}` | 交易时间段每2分钟。 | index_realtime/rt-trace-timedeal-title |
+| 当天分价成交占比 | `time/real/trace/realpercent/{股票代码}` | 每天20:00。 | index_realtime/rt-trace-realpercent-title |
+| 当天大单交易 | `time/real/trace/bigdeal/{股票代码}` | 每天20:00。 | index_realtime/rt-trace-bigdeal-title |
+| 最新K线 | `time/real/time/{股票代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-zxfsjy-title |
+| 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{股票代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-lsfsjy-title |
+| 沪深主要指数 | `base/shsz` | 每天15:35点。 | index_sh-sz-index-list/shsz-shsz-title |
+| 上证系列指数 | `base/sh` | 每天15:35点。 | index_sh-sz-index-list/shsz-sh-title |
+| 深证系列指数 | `base/sz` | 每天15:35点。 | index_sh-sz-index-list/shsz-sz-title |
+| 中证系列指数 | `base/zzzs` | 每天15:35点。 | index_sh-sz-index-list/shsz-zzzs-title |
+| 指数成分 | `base/zscf` | 每天15:35点。 | index_sh-sz-index-list/shsz-zscf-title |
+| 指数实时数据 | `time/real/{指数代码（包含sh/sz前缀，如：sh000001）}` | 交易时间段每1分钟。 | index_sh-sz-index-realtime/sh-sz-index-rt-trace-title |
+| 沪深两市上涨下跌数概览 | `time/real/shszzdbl` | 交易时间段每1分钟。 | index_sh-sz-index-realtime/index-zd-sum-title |
+| 最新K线 | `time/real/time/{指数代码（包含sh/sz前缀，如：sh000001）}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_sh-sz-index-history_trade/shsz-zxfsjy-title |
+| 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{指数代码（包含sh/sz前缀，如：sh000001）}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_sh-sz-index-history_trade/shsz-lsfsjy-title |
+
+## 沪深数据中心（69 个数据集）
+
+> 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股
+
+| 数据集 | 本地路径 | 更新频率 | 文档锚点 |
+|---|---|---|---|
+| 今日交易提示 | `all/tt` | 每天15:30。 | sjzx_invest-referece/invest-referece-tt |
+| 融资融券交易总量 | `all/rzrqtt` | 每天15:30。 | sjzx_invest-referece/invest-referece-rzrqtt |
+| 融资融券交易明细 | `all/rzrqdt` | 每天15:30。 | sjzx_invest-referece/invest-referece-rzrqdt |
+| 大宗交易 | `all/bt` | 每天15:30。 | sjzx_invest-referece/invest-referece-bt |
+| 解禁限售 | `all/rb` | 每天15:30。 | sjzx_invest-referece/invest-referece-rb |
+| 打新收益 | `all/ne` | 每天15:30。 | sjzx_invest-referece/invest-referece-ne |
+| 历史累计分红 | `all/fh` | 每天15:30。 | sjzx_invest-referece/invest-referece-fh |
+| 每日详情 | `all/ld` | 每天20:00。 | sjzx_data-lhb/data-lhb-ld |
+| 个股上榜统计 | `all/gg/{近n日}` | 每天15:30。 | sjzx_data-lhb/data-lhb-gg |
+| 营业部上榜统计 | `all/yyb/{近n日}` | 每天15:30。 | sjzx_data-lhb/data-lhb-yyb |
+| 机构席位追踪 | `all/jgzz/{近n日}` | 每天15:30。 | sjzx_data-lhb/data-lhb-jgzz |
+| 机构席位成交明细 | `all/jgcj` | 每天15:30。 | sjzx_data-lhb/data-lhb-jgcj |
+| 阶段最高最低 | `all/jdgd` | 每天20:00。 | sjzx_data-market-per/data-market-per-gd |
+| 盘中创新高个股 | `all/cxg` | 每天20:00。 | sjzx_data-market-per/data-market-per-cxg |
+| 盘中创新低个股 | `all/cxd` | 每天20:00。 | sjzx_data-market-per/data-market-per-cxd |
+| 成交骤增个股 | `all/cjzz` | 每天20:00。 | sjzx_data-market-per/data-market-per-cjzz |
+| 成交骤减个股 | `all/cjzj` | 每天20:00。 | sjzx_data-market-per/data-market-per-cjzj |
+| 连续放量个股 | `all/lxfl` | 每天20:00。 | sjzx_data-market-per/data-market-per-lxfl |
+| 连续缩量个股 | `all/lxsl` | 每天20:00。 | sjzx_data-market-per/data-market-per-lxsl |
+| 连续上涨个股 | `all/lxsz` | 每天20:00。 | sjzx_data-market-per/data-market-per-lxsz |
+| 连续下跌个股 | `all/lxxd` | 每天20:00。 | sjzx_data-market-per/data-market-per-lxxd |
+| 周涨跌排名 | `all/zzdpm` | 每天20:00。 | sjzx_data-market-per/data-market-per-zzdpm |
+| 月涨跌排名 | `all/yzdpm` | 每天20:00。 | sjzx_data-market-per/data-market-per-yzdpm |
+| 本周强势股 | `all/bzqsg` | 每天20:00。 | sjzx_data-market-per/data-market-per-bzqsg |
+| 本月强势股 | `all/byqsg` | 每天20:00。 | sjzx_data-market-per/data-market-per-byqsg |
+| 流通市值排行 | `all/ltsz` | 每天20:00。 | sjzx_data-market-per/data-market-per-ltsz |
+| 市盈率排行 | `all/syl` | 每天20:00。 | sjzx_data-market-per/data-market-per-syl |
+| 市净率排行 | `all/sjl` | 每天20:00。 | sjzx_data-market-per/data-market-per-sjl |
+| ROE排行 | `all/roe` | 每天16:30。 | sjzx_data-market-per/data-market-per-roe |
+| 盈利能力 | `all/finyl/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-yl |
+| 运营能力 | `all/finyynl/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-yynl |
+| 成长能力 | `all/fincznl/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-cznl |
+| 偿债能力 | `all/finchzhainl/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-chzhainl |
+| 现金流量 | `all/finxjll/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-xjll |
+| 业绩报表 | `all/finyjbb/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-yjbb |
+| 业绩预告 | `all/finyjyg/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-yjyg |
+| 业绩快报 | `all/finyjkb/{年份_季度}` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-yjkb |
+| 利润细分 | `all/finlrxf` | 每天20:00。 | sjzx_data-market-fin/data-market-fin-lrxf |
+| 机构持股汇总 | `all/orgcghz/{年份_季度}` | 每周六上午9点。 | sjzx_data-market-org/data-market-org-cghz |
+| 基金重仓 | `all/orgjjzc/{年份_季度}` | 每周六上午9点。 | sjzx_data-market-org/data-market-org-jjzc |
+| 社保重仓 | `all/orgsbzc/{年份_季度}` | 每周六上午9点。 | sjzx_data-market-org/data-market-org-sbzc |
+| QFII重仓股 | `all/orgqfiizc/{年份_季度}` | 每周六上午9点。 | sjzx_data-market-org/data-market-org-qfiizc |
+| 证监会行业 | `all/zjlx/zjhhy` | 每天15:30。 | sjzx_zjlx-bk/zjlx-bk-zjhhy |
+| 概念板块 | `all/zjlx/gnbk` | 每天15:30。 | sjzx_zjlx-bk/zjlx-bk-gnbk |
+| 净流入额排名 | `all/zjlx/jlrepm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-jlrepm |
+| 净流入率排名 | `all/zjlx/jlrlpm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-jlrlpm |
+| 主力净流入额排名 | `all/zjlx/zljlrepm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-zljlrepm |
+| 主力净流入率排名 | `all/zjlx/zljlrlpm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-zljlrlpm |
+| 散户净流入额排名 | `all/zjlx/shjlrepm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-shjlrepm |
+| 散户净流入率排名 | `all/zjlx/shjlrlpm` | 每天15:30。 | sjzx_zjlx-gg/zjlx-gg-shjlrlpm |
+| 证监会行业资金路线图 | `all/zjlx/zjhhyzjlx` | 每天15:30。 | sjzx_zjlx-zjlxt/zjlx-zjlxt-zjhhyzjlx |
+| 概念板块资金路线图 | `all/zjlx/gnbklx` | 每天15:30。 | sjzx_zjlx-zjlxt/zjlx-zjlxt-gnbklx |
+| 个股阶段统计总览 | `all/zjlx/ggjdtjzl` | 每天15:30。 | sjzx_zjlx-zjlxt/zjlx-zjlxt-ggjdtjzl |
+| 个股阶段统计 | `all/zjlx/{ggjdtj_阶段}` | 每天15:30。 | sjzx_zjlx-zjlxt/zjlx-zjlxt-ggjdtj |
+| 主力连续净流入/流出 | `all/zjlx/zllxjlr` | 每天15:30。 | sjzx_zjlx-zjlxt/zjlx-zjlxt-zllxjlr |
+| 最新资金流向概览 | `all/nxbx/zjgl` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-zjgl |
+| 沪股通历史数据 | `all/nxbx/hgtlssj` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-hgtlssj |
+| 深股通历史数据 | `all/nxbx/sgtlssj` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-sgtlssj |
+| 港股通（沪）历史数据 | `all/nxbx/ggthlssj` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggthlssj |
+| 港股通（深）历史数据 | `all/nxbx/ggtslssj` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggtslssj |
+| 沪股通成分股行情 | `all/nxbx/hgthq` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-hgthq |
+| 深股通成分股行情 | `all/nxbx/sgthq` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-sgthq |
+| 港股通（沪）成分股行情 | `all/nxbx/ggthhq` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggthhq |
+| 港股通（深）成分股行情 | `all/nxbx/ggtshq` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggtshq |
+| AH股比价 | `all/nxbx/ahgbj` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ahgbj |
+| 沪股通十大成交股 | `all/nxbx/hgtsdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-hgtsdcj |
+| 深股通十大成交股 | `all/nxbx/sgtsdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-sgtsdcj |
+| 港股通（沪）十大成交股 | `all/nxbx/ggthsdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggthsdcj |
+| 港股通（深）十大成交股 | `all/nxbx/ggtssdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggtssdcj |
+
+## 基金（71 个数据集）
+
+> 基金估值净值、业绩分红、基金经理、持仓分析、五大评级体系、基金重仓股
+
+| 数据集 | 本地路径 | 更新频率 | 文档锚点 |
+|---|---|---|---|
+| 所有基金列表 | `base/jjdm` | 每天20:00。 | jijinHq_jijin-liebiao/jijin-all-list-title |
+| 估值基金列表 | `base/jjdm_pzgz` | 每天16:00。 | jijinHq_jijin-liebiao/jijin-pzgz-list-title |
+| 封闭式基金列表 | `base/fbsjj` | 每天16:00。 | jijinHq_jijin-liebiao/jijin-fbsjj-list-title |
+| ETF基金列表 | `base/etfjj` | 每天16:00。 | jijinHq_jijin-liebiao/jijin-etfjj-list-title |
+| LOF基金列表 | `base/lofjj` | 每天16:00。 | jijinHq_jijin-liebiao/jijin-lofjj-list-title |
+| 基金概况 | `time/jjf10/info/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-base-info-info-title |
+| 基金经理变动一览 | `time/jjf10/jjjlbd/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-base-info-jjjlbd-title |
+| 在任基金经理列表 | `all/jjsjzx/jjjl/zr` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-jjjl-zr-title |
+| 在任基金经理简介 | `time/jjf10/jjjl/info/{基金经理代码}` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-jjjl-zr-info-title |
+| 管理过的基金一览 | `time/jjf10/jjjl/his/{基金经理代码}` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-jjjl-zr-his-title |
+| 现任基金业绩与排名详情 | `time/jjf10/jjjl/curr/{基金经理代码}` | 每周六早上6点更新。 | jijinHq_jijin-base-info/jijin-jjjl-zr-curr-title |
+| 收入分析 | `time/jjf10/cwbb/srfx/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-cwbb-srfx-title |
+| 费用分析 | `time/jjf10/cwbb/fyfx/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-cwbb-fyfx-title |
+| 主要财务指标 | `time/jjf10/cwbb/zycwzb/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-cwbb-zycwzb-title |
+| 利润表 | `time/jjf10/cwbb/lrb/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-cwbb-lrb-title |
+| 资产负债表 | `time/jjf10/cwbb/zcfzb/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-cwbb-zcfzb-title |
+| 规模变动 | `time/jjf10/gmfe/gmbd/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-gmfe-fmbd-title |
+| 持有人结构 | `time/jjf10/gmfe/cyrjg/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-caiwu-guimo/jijin-gmfe-cyrjg-title |
+| 股票持仓 | `time/jjf10/tzzh/jjcc/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-tzzh/jijin-tzzh-jjcc-title |
+| 债券持仓 | `time/jjf10/tzzh/zqcc/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-tzzh/jijin-tzzh-zqcc-title |
+| 行业配置 | `time/jjf10/tzzh/hypz/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-tzzh/jijin-tzzh-hypz-title |
+| 资产配置 | `time/jjf10/tzzh/zcpz/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-tzzh/jijin-tzzh-zcpz-title |
+| 基金重仓股 | `all/jjsjzx/jjcc/jjzcg/{年份_季度}` | 每天20:30。 | jijinHq_jijin-tzzh/jijin-jjzc-title |
+| 基金重仓股变动 | `all/jjsjzx/jjcc/jjzcgbd/{年份_季度}` | 每天20:30。 | jijinHq_jijin-tzzh/jijin-jjzcgbd-title |
+| 基金业绩 | `time/jjhq/jjyj/{基金代码}` | 每天20:00。 | jijinHq_jijin-yeji/jijin-yeji-title |
+| 基金分红 | `time/jjhq/jjfh/{基金代码}` | 每天20:00。 | jijinHq_jijin-yeji/jijin-jjfh-title |
+| 基金规模 | `time/jjhq/jjgm/{基金代码}` | 每天20:00。 | jijinHq_jijin-yeji/jijin-jjgm-title |
+| 封闭式基金行情 | `time/jjhq/fbsjj/{基金代码}` | 交易时间段每10分钟。 | jijinHq_jijin-hangqing/jijin-fbsjj-hq-title |
+| ETF基金行情 | `time/jjhq/etfjj/{基金代码}` | 交易时间段每10分钟。 | jijinHq_jijin-hangqing/jijin-etfjj-hq-title |
+| LOF基金行情 | `time/jjhq/lofjj/{基金代码}` | 交易时间段每10分钟。 | jijinHq_jijin-hangqing/jijin-lofjj-hq-title |
+| 盘中最新估值 | `time/jjhq/pzgz/{基金代码}` | 交易时间段每10分钟。 | jijinHq_jijin-hangqing/jijin-guzhi-pzgz-title |
+| 最新K线 | `time/real/time/{基金代码}/{分时级别}` | 每日16点更新。 | jijinHq_jijin-hangqing/jijin-kline-new-title |
+| 历史K线 | `time/history/trade/{基金代码}/{分时级别}` | 每日16点更新。 | jijinHq_jijin-hangqing/jijin-kline-his-title |
+| 开放式基金净值 | `time/jjhq/jjjzkfs/{基金代码}` | 每天20:00。 | jijinHq_jijin-jingzhi-huibao/jijin-jjjz-kfsjj-title |
+| 封闭式基金净值 | `time/jjhq/jjjzfbs/{基金代码}` | 每天20:00。 | jijinHq_jijin-jingzhi-huibao/jijin-jjjz-fbsjj-title |
+| 分级子基金净值 | `time/jjhq/jjjzfjzjj/{基金代码}` | 每天20:00。 | jijinHq_jijin-jingzhi-huibao/jijin-jjjz-fjzjj-title |
+| 历史净值 | `time/jjf10/jzhb/jjlsjz/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-jingzhi-huibao/jijin-jzhb-lsjz-title |
+| 分红送配 | `time/jjf10/jzhb/jjfhsp/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-jingzhi-huibao/jijin-jzhb-fhsp-title |
+| 阶段统计 | `time/jjf10/jzhb/jjjdtj/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-jingzhi-huibao/jijin-jzhb-jdtj-title |
+| 季度涨幅明细 | `time/jjf10/jzhb/jjjdzfmx/{基金代码}` | 每周六早上6点更新。 | jijinHq_jijin-jingzhi-huibao/jijin-jzhb-jdzfmx-title |
+| 产品特性 | `all/jjsjzx/fjjj/jcxx/cptx` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-jcxx-cptx-title |
+| 份额类型 | `all/jjsjzx/fjjj/jcxx/fexl` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-jcxx-felx-title |
+| 价格透视 | `all/jjsjzx/fjjj/jgts` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-jgts-title |
+| 预期收益 | `all/jjsjzx/fjjj/yqsy` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-yqsy-title |
+| 折溢价套利 | `all/jjsjzx/fjjj/zyjtl` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-zyjtl-title |
+| 成交情况 | `all/jjsjzx/fjjj/ldx/cjqk` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-ldx-cjqk-title |
+| 份额变动 | `all/jjsjzx/fjjj/ldx/febd/{参数}` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-ldx-febd-title |
+| 定期折算 | `all/jjsjzx/fjjj/zsxx/dqzs` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-zsxx-dqzs-title |
+| 不定期折算 | `all/jjsjzx/fjjj/zsxx/bdqzs` | 每天20:30。 | jijinHq_jijin-fenji/jijin-fjjj-zsxx-bdqzs-title |
+| 股票型、混合型、债券型、国内其他 | `all/jjsjzx/cesy/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-cesy-gpx-title |
+| 开放式基金业绩排行（股、混合、债、QDII类） | `all/jjsjzx/yjph/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-yeji-kaifang-title |
+| 封闭式基金业绩排行 | `all/jjsjzx/yjph/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-yeji-fengbi-title |
+| 分级子基金业绩排行 | `all/jjsjzx/yjph/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-yeji-fenji-title |
+| 开放式基金净值排名（股、混合、债、QDII类） | `all/jjsjzx/jjjz/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-jingzhi-kaifang-title |
+| 开放式基金净值排名（货币类） | `all/jjsjzx/jjjz/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-jingzhi-kaifang-hb-title |
+| 封闭式基金净值排名 | `all/jjsjzx/jjjz/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-jingzhi-fengbi-title |
+| 分级子基金净值排名 | `all/jjsjzx/jjjz/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-paiming/jijin-jingzhi-fenji-title |
+| 开放式基金基金分红 | `all/jjsjzx/jjfh/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-fenhong-kaifang-title |
+| 封闭式基金基金分红 | `all/jjsjzx/jjfh/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-fenhong-fengbi-title |
+| 分级子基金基金分红 | `all/jjsjzx/jjfh/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-fenhong-fenji-title |
+| 开放式基金基金规模 | `all/jjsjzx/jjgm/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-guimo-kaifang-title |
+| 封闭式基金基金规模 | `all/jjsjzx/jjgm/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-guimo-fengbi-title |
+| 分级子基金基金规模 | `all/jjsjzx/jjgm/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-fenhong-guimo/jijin-guimo-fenji-title |
+| 晨星评级 | `all/jjsjzx/jjpj/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/pingji-chenxing-title |
+| 海通证券评级 | `all/jjsjzx/jjpj/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/pingji-haitong-title |
+| 银河证券评级 | `all/jjsjzx/jjpj/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/pingji-yinhe-title |
+| 招商证券评级 | `all/jjsjzx/jjpj/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/pingji-zhaoshang-title |
+| 济安金信评级 | `all/jjsjzx/jjpj/{基金分类参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/pingji-jian-title |
+| 基金公司 | `all/jjsjzx/jjgs` | 每天20:30。 | jijinHq_jijin-pingji-jigou/jijin-jjgs-title |
+| 托管银行 | `all/jjsjzx/tgyh` | 每天20:30。 | jijinHq_jijin-pingji-jigou/jijin-tgyh-title |
+| 代销机构 | `all/jjsjzx/dxjg/{参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/jijin-dxjg-title |
+
+## 港股（31 个数据集）
+
+> 港股列表、实时行情(2秒)、F10全档案、财务分析、K线19种级别
+
+| 数据集 | 本地路径 | 更新频率 | 文档锚点 |
+|---|---|---|---|
+| 港股列表 | `base/gphk` | 每天0点。 | indexHk_hk-gplist/gupiao-gplbjk-title |
+| 证券资料 | `time/hk/f10/secinfo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-secinfo-title |
+| 公司资料 | `time/hk/f10/orgprofile/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-org-title |
+| 首发资料 | `time/hk/f10/ipo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-ipo-title |
+| 窝轮 | `time/hk/f10/warrant/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-warrant-title |
+| 熊牛证 | `time/hk/f10/cbbc/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-cbbc-title |
+| 董事会成员 | `time/hk/f10/board/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-board-title |
+| 管理层成员 | `time/hk/f10/manager/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-manager-title |
+| 业务展望 | `time/hk/f10/businessexpectation/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-outlook-title |
+| 主要指标 | `time/hk/f10/finmainindex/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-mainindex-title |
+| 资产负债表 | `time/hk/f10/balance/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-balance-title |
+| 利润表 | `time/hk/f10/profit/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-income-title |
+| 现金流量表 | `time/hk/f10/cashflow/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-cashflow-title |
+| 历史股本变化 | `time/hk/f10/equitychange/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-change-title |
+| 董事及股东权益 | `time/hk/f10/holder/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-holder-title |
+| 历史股权变动（董事增减持） | `time/hk/f10/shequitychg/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-shchg-title |
+| 投资评级 | `time/hk/f10/rating/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-rating-title |
+| 市场表现对比 | `time/hk/f10/industrymarket/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-market-title |
+| 成长性对比 | `time/hk/f10/industrygrowth/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-growth-title |
+| 估值对比 | `time/hk/f10/industryvaluation/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-valuation-title |
+| 规模对比 | `time/hk/f10/industryscale/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-scale-title |
+| 大事提醒 | `time/hk/f10/corporateevent/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-reminder-title |
+| 分红派息 | `time/hk/f10/dividend/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-dividend-title |
+| 股票回购 | `time/hk/f10/repo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-repo-title |
+| 拆股合并 | `time/hk/f10/splitmerge/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-split-title |
+| 相关公告 | `time/hk/f10/notice/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-notice-title |
+| 实时行情数据（2秒落盘） | `time/hk/real/{股票或指数代码}` | 交易时间段每10秒。 | indexHk_hk-realtime/hk-rt-trace-title |
+| 当天分时成交 | `time/hk/real/trace/timedeal/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-timedeal-title |
+| 当天逐笔交易 | `time/hk/real/trace/onebyone/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-onebyone-title |
+| 最新K线 | `time/hk/real/time/{股票或指数代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后16:30更新。 | indexHk_hk-kline/hk-kline-new |
+| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/hk/history/trade/{股票或指数代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别每天16:30更新。 | indexHk_hk-kline/hk-kline-his |
+
+## 美股（25 个数据集）
+
+> 美股列表、实时行情、F10全档案、财务分析、K线
+
+| 数据集 | 本地路径 | 更新频率 | 文档锚点 |
+|---|---|---|---|
+| 美股列表 | `base/gpus` | 美东时间每天0点。 | indexUs_us-gplist/us-gplist-title |
+| 证券资料 | `time/us/f10/secinfo/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-secinfo-title |
+| 公司资料 | `time/us/f10/orgprofile/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-orgprofile-title |
+| 主营构成 | `time/us/f10/maincompose/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-maincompose-title |
+| 高管研究 | `time/us/f10/executive/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-executive-title |
+| 卖空明细 | `time/us/f10/short/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-short-title |
+| 机构评级 | `time/us/f10/rating/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-rating-title |
+| 主要指标 | `time/us/f10/finmainindex/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-mainindex-title |
+| 资产负债表 | `time/us/f10/balance/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-balance-title |
+| 综合损益表 | `time/us/f10/income/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-income-title |
+| 现金流量表 | `time/us/f10/cashflow/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-cashflow-title |
+| 股本变动 | `time/us/f10/equitychange/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-equitychange-title |
+| 拆股并股 | `time/us/f10/stocksplit/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-stocksplit-title |
+| 董事及股东权益 | `time/us/f10/holder/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-holder-title |
+| 机构持股 | `time/us/f10/orghold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-orghold-title |
+| 基金持股 | `time/us/f10/fundhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-fundhold-title |
+| 高管持股 | `time/us/f10/leaderhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-leaderhold-title |
+| 机构明细 | `time/us/f10/orgdetail/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-orgdetail-title |
+| 大事提醒 | `time/us/f10/gsds/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_events/us_events-gsds-title |
+| 分红派息 | `time/us/f10/dividend/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_events/us_events-dividend-title |
+| 实时行情数据（3秒落盘） | `time/us/real/us_{代码}` | 交易时间段（美东时间）每10秒。 | indexUs_us-realtime/us-rt-trace-title |
+| 当天分时成交 | `time/us/real/trace/timedeal/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-timedeal-title |
+| 当天逐笔交易 | `time/us/real/trace/onebyone/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-onebyone-title |
+| 最新K线 | `time/us/real/time/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每5分钟更新，日线及以上级别盘后16:30（美东时间）更新。 | indexUs_us-kline/us-kline-new |
+| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/us/history/trade/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每5分钟更新，日线及以上级别每天16:30（美东时间）更新。 | indexUs_us-kline/us-kline-his |
