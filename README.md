@@ -16,13 +16,13 @@ GitHub：https://github.com/ig50-service/ig50-skill ｜ Gitee：https://gitee.co
 
 ## 这是什么
 
-[IG50](https://ig50.com/home.html) 是本地运行的股票数据引擎：331 个数据集覆盖沪深京A股、沪深数据中心、基金、港股、美股，行情与档案数据以 JSON 文本文件持续落盘到用户本地，读取零延迟、无并发限制、策略不出本地。
+[IG50](https://ig50.com/home.html) 是本地运行的股票数据引擎：338 个数据集覆盖沪深京A股、沪深数据中心、基金、港股、美股，行情与档案数据以 JSON 文本文件持续落盘到用户本地，读取零延迟、无并发限制、策略不出本地。
 
 本仓库提供标准 **Agent Skill**（SKILL.md 格式）。安装到你的本地 Agent（Claude Code 等）后，Agent 可以：
 
 - 检测本机 IG50 部署状态（数据目录、股票列表、行情文件新鲜度）；
 - 未部署时引导你完成授权申请与脚本安装（含 Windows 关杀毒提醒、服务验证）；
-- 按任务需求在 331 个数据集中定位正确的数据集与路径，拉取字段文档，写出正确的读取与回测代码。
+- 按任务需求在 338 个数据集中定位正确的数据集与路径，拉取字段文档，写出正确的读取与回测代码。
 
 ## 安装 Skill
 
@@ -56,7 +56,7 @@ Gitee 用户把克隆地址换成 https://gitee.com/igtrade/ig50-skill 即可，
 |------|------|
 | `SKILL.md` | skill 入口：检测 → 安装 → 数据使用的工作流 |
 | `references/install.md` | 安装指引：授权、服务器要求、分平台命令、验证、排障 |
-| `references/datasets.md` | 全部 331 个数据集目录表（名称/路径/更新频率/文档锚点） |
+| `references/datasets.md` | 全部 338 个数据集目录表（名称/路径/更新频率/文档锚点） |
 | `references/data-formats.md` | JSON 形态、高频字段速查、K线级别、日期格式 |
 | `references/recipes.md` | Python 读取与回测代码模板 |
 | `scripts/check_install.py` | 只读安装检测脚本（零依赖） |
