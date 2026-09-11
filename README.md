@@ -63,7 +63,7 @@ Gitee 用户把克隆地址换成 https://gitee.com/igtrade/ig50-skill 即可，
 
 ## 相关仓库
 
-- [ig50-official](https://github.com/ig50-service/ig50-official)（GitHub）/ [ighub](https://gitee.com/igtrade/ighub)（Gitee）：IG50 文档镜像站（安装包下载、331 个数据集文档）
+- [ig50-official](https://github.com/ig50-service/ig50-official)（GitHub）/ [ighub](https://gitee.com/igtrade/ighub)（Gitee）：IG50 文档镜像站（安装包下载、338 个数据集文档）
 
 ## 许可
 
