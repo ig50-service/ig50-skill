@@ -143,8 +143,8 @@
 | 分时成交量对比 | `time/dxsj/cjdb/{代码}` | 每天20:0更新。 | index_realtime/cjdb-title |
 | 筹码分布 | `time/cmfb/{代码}` | 每天20:00更新。 | index_realtime/cmfb-title |
 | 历史估值序列 | `time/gzxl/{代码}` | 每天20:00更新。 | index_realtime/gzxl-title |
-| 最新K线 | `time/real/time/{股票代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-zxfsjy-title |
-| 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{股票代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-lsfsjy-title |
+| 最新K线 | `time/real/time/{股票代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-zxfsjy-title |
+| 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{股票代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-lsfsjy-title |
 | 沪深主要指数 | `base/shsz` | 每天15:35点。 | index_sh-sz-index-list/shsz-shsz-title |
 | 上证系列指数 | `base/sh` | 每天15:35点。 | index_sh-sz-index-list/shsz-sh-title |
 | 深证系列指数 | `base/sz` | 每天15:35点。 | index_sh-sz-index-list/shsz-sz-title |
@@ -344,8 +344,8 @@
 | 实时行情数据（2秒落盘） | `time/hk/real/{股票或指数代码}` | 交易时间段每10秒。 | indexHk_hk-realtime/hk-rt-trace-title |
 | 当天分时成交明细 | `time/hk/real/trace/onebyone/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-onebyone-title |
 | 当天分钟分时成交 | `time/hk/real/trace/timedeal/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-timedeal-title |
-| 最新K线 | `time/hk/real/time/{股票或指数代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后16:30更新。 | indexHk_hk-kline/hk-kline-new |
-| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/hk/history/trade/{股票或指数代码}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别每天16:30更新。 | indexHk_hk-kline/hk-kline-his |
+| 最新K线 | `time/hk/real/time/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后16:30更新。 | indexHk_hk-kline/hk-kline-new |
+| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/hk/history/trade/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别每天16:30更新。 | indexHk_hk-kline/hk-kline-his |
 
 ## 美股（25 个数据集）
 
@@ -376,5 +376,5 @@
 | 实时行情数据（3秒落盘） | `time/us/real/us_{代码}` | 交易时间段（美东时间）每10秒。 | indexUs_us-realtime/us-rt-trace-title |
 | 当天分时成交明细 | `time/us/real/time/trace/onebyone/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-onebyone-title |
 | 当天分钟分时成交 | `time/us/real/time/trace/timedeal/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-timedeal-title |
-| 最新K线 | `time/us/real/time/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每5分钟更新，日线及以上级别盘后16:30（美东时间）更新。 | indexUs_us-kline/us-kline-new |
-| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/us/history/trade/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每5分钟更新，日线及以上级别每天16:30（美东时间）更新。 | indexUs_us-kline/us-kline-his |
+| 最新K线 | `time/us/real/time/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别盘后16:30（美东时间）更新。 | indexUs_us-kline/us-kline-new |
+| 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/us/history/trade/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别每天16:30（美东时间）更新。 | indexUs_us-kline/us-kline-his |
