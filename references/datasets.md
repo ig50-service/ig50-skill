@@ -1,4 +1,4 @@
-# IG50 数据集目录（共 338 个）
+# IG50 数据集目录（共 340 个）
 
 > 本地路径相对数据根目录（以配置文件 `ig50_user_config.properties` 的 `server.data.dir` 为准，
 > 未指定时用缺省值：Windows `C:\ig50-data`，Linux `/ig50-data`）；`{股票代码}` 等占位符替换为实际代码（如 000001）。
@@ -6,7 +6,7 @@
 > 备选：按 `/` 拆分锚点，直接访问官网数据集说明页 `https://ig50.com/{page_key}.html?maodian={maodian}`，
 > 或在 https://ig50.com/search.html 按数据集名称检索直达。
 
-## 沪深京A股（142 个数据集）
+## 沪深京A股（144 个数据集）
 
 > 实时行情(3秒)、L2核心指标、逐笔交易、历史K线、F10全档案
 
@@ -145,6 +145,8 @@
 | 历史估值序列 | `time/gzxl/{代码}` | 每天20:00更新。 | index_realtime/gzxl-title |
 | 最新K线 | `time/real/time/{股票代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-zxfsjy-title |
 | 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{股票代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后15:35更新。 | index_gupiao-kline/gupiao-lsfsjy-title |
+| 最新1分钟K线 | `time/real/time/{股票代码}/{分时级别}` | 盘中每5秒更新。 | index_gupiao-kline/gupiao-zx1mk-title |
+| 历史1分钟K线（数据范围：约半年） | `time/history/trade/{股票代码}/{分时级别}` | 盘中每5秒更新。 | index_gupiao-kline/gupiao-ls1mk-title |
 | 沪深主要指数 | `base/shsz` | 每天15:35点。 | index_sh-sz-index-list/shsz-shsz-title |
 | 上证系列指数 | `base/sh` | 每天15:35点。 | index_sh-sz-index-list/shsz-sh-title |
 | 深证系列指数 | `base/sz` | 每天15:35点。 | index_sh-sz-index-list/shsz-sz-title |
