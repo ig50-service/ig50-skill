@@ -1,4 +1,4 @@
-# IG50 数据集目录（共 340 个）
+# IG50 数据集目录（共 518 个）
 
 > 本地路径相对数据根目录（以配置文件 `ig50_user_config.properties` 的 `server.data.dir` 为准，
 > 未指定时用缺省值：Windows `C:\ig50-data`，Linux `/ig50-data`）；`{股票代码}` 等占位符替换为实际代码（如 000001）。
@@ -157,7 +157,7 @@
 | 最新K线 | `time/real/time/{指数代码（包含sh/sz前缀，如：sh000001）}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_sh-sz-index-history_trade/shsz-zxfsjy-title |
 | 历史K线（数据范围：短分时两年，日线及以上所有） | `time/history/trade/{指数代码（包含sh/sz前缀，如：sh000001）}/{分时级别}` | 分钟级别盘中每5分钟更新，日线及以上级别盘后15:35更新。 | index_sh-sz-index-history_trade/shsz-lsfsjy-title |
 
-## 沪深数据中心（69 个数据集）
+## 沪深数据中心（215 个数据集）
 
 > 龙虎榜、南北向资金、市场异动、财务五维分析、机构持股
 
@@ -232,6 +232,152 @@
 | 深股通十大成交股 | `all/nxbx/sgtsdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-sgtsdcj |
 | 港股通（沪）十大成交股 | `all/nxbx/ggthsdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggthsdcj |
 | 港股通（深）十大成交股 | `all/nxbx/ggtssdcj/{交易日}` | 每天20:00。 | sjzx_zjlx-nxbx/zjlx-nxbx-ggtssdcj |
+| 居民消费价格指数（CPI） | `time/hongguan/cpi` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-cpi-title |
+| 工业品出厂价格指数（PPI） | `time/hongguan/ppi` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-ppi-title |
+| 国内生产总值（GDP） | `time/hongguan/gdp` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-gdp-title |
+| 采购经理人指数（PMI） | `time/hongguan/pmi` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-pmi-title |
+| 企业商品价格指数 | `time/hongguan/qyspjg` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-qyspjg-title |
+| 工业增加值增长 | `time/hongguan/gyzjz` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-gyzjz-title |
+| 城镇固定资产投资 | `time/hongguan/gdzctz` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-gdzctz-title |
+| 社会消费品零售总额 | `time/hongguan/xfp` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-xfp-title |
+| 企业景气及企业家信心指数 | `time/hongguan/qyjqzs` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-qyjqzs-title |
+| 消费者信心指数 | `time/hongguan/xfzxx` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-xfzxx-title |
+| 海关进出口增减情况一览表 | `time/hongguan/hgjck` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-hgjck-title |
+| 外汇和黄金储备 | `time/hongguan/hjwh` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-hjwh-title |
+| 外商直接投资（实际利用外资金额） | `time/hongguan/fdi` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-fdi-title |
+| 财政收入 | `time/hongguan/czsr` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-czsr-title |
+| 全国税收收入 | `time/hongguan/qgsssr` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-qgsssr-title |
+| 国内成品油价格 | `time/hongguan/youjia` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-youjia-title |
+| 房价指数 | `time/hongguan/newhouse/｛年份-月份｝` | 每天21:00。 | sjzx_hongguan-jingji/hongguan-newhouse-title |
+| 货币供应量（M0/M1/M2） | `time/hongguan/hbgyl` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-hbgyl-title |
+| 新增信贷数据 | `time/hongguan/xzxd` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-xzxd-title |
+| 本外币存款 | `time/hongguan/wbck` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-wbck-title |
+| 外汇贷款数据 | `time/hongguan/whxd` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-whxd-title |
+| LPR数据 | `time/hongguan/lpr` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-lpr-title |
+| 利率调整 | `time/hongguan/yhll` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-yhll-title |
+| 存款准备金率 | `time/hongguan/ckzbj` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-ckzbj-title |
+| 全国股票交易统计表 | `time/hongguan/gpjytj` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-gpjytj-title |
+| 交易结算资金（银证转账） | `time/hongguan/banktransfer` | 每天21:00。 | sjzx_hongguan-jinrong/hongguan-banktransfer-title |
+| Shibor人民币（隔夜） | `time/hongguan/shibor/on` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-on-title |
+| 伦敦银行同业拆借市场 | `time/hongguan/libor/libor` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-libor-title |
+| Shibor人民币（1周） | `time/hongguan/shibor/1w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-1w-title |
+| Shibor人民币（2周） | `time/hongguan/shibor/2w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-2w-title |
+| Shibor人民币（1月） | `time/hongguan/shibor/1m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-1m-title |
+| Shibor人民币（3月） | `time/hongguan/shibor/3m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-3m-title |
+| Shibor人民币（6月） | `time/hongguan/shibor/6m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-6m-title |
+| Shibor人民币（9月） | `time/hongguan/shibor/9m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-9m-title |
+| Shibor人民币（1年） | `time/hongguan/shibor/1y` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-shibor-1y-title |
+| Chibor人民币（隔夜） | `time/hongguan/chibor/on` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-on-title |
+| Chibor人民币（1周） | `time/hongguan/chibor/1w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-1w-title |
+| Chibor人民币（2周） | `time/hongguan/chibor/2w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-2w-title |
+| Chibor人民币（3周） | `time/hongguan/chibor/3w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-3w-title |
+| Chibor人民币（1月） | `time/hongguan/chibor/1m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-1m-title |
+| Chibor人民币（2月） | `time/hongguan/chibor/2m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-2m-title |
+| Chibor人民币（3月） | `time/hongguan/chibor/3m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-3m-title |
+| Chibor人民币（4月） | `time/hongguan/chibor/4m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-4m-title |
+| Chibor人民币（6月） | `time/hongguan/chibor/6m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-6m-title |
+| Chibor人民币（9月） | `time/hongguan/chibor/9m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-9m-title |
+| Chibor人民币（1年） | `time/hongguan/chibor/1y` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-chibor-1y-title |
+| Euribor欧元（1周） | `time/hongguan/euribor/1w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-euribor-1w-title |
+| Euribor欧元（1月） | `time/hongguan/euribor/1m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-euribor-1m-title |
+| Euribor欧元（3月） | `time/hongguan/euribor/3m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-euribor-3m-title |
+| Euribor欧元（6月） | `time/hongguan/euribor/6m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-euribor-6m-title |
+| Euribor欧元（1年） | `time/hongguan/euribor/1y` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-euribor-1y-title |
+| Hibor港币（隔夜） | `time/hongguan/hibor/hkdon` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkdon-title |
+| Hibor港币（1周） | `time/hongguan/hibor/hkd1w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd1w-title |
+| Hibor港币（2周） | `time/hongguan/hibor/hkd2w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd2w-title |
+| Hibor港币（1月） | `time/hongguan/hibor/hkd1m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd1m-title |
+| Hibor港币（2月） | `time/hongguan/hibor/hkd2m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd2m-title |
+| Hibor港币（3月） | `time/hongguan/hibor/hkd3m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd3m-title |
+| Hibor港币（6月） | `time/hongguan/hibor/hkd6m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd6m-title |
+| Hibor港币（1年） | `time/hongguan/hibor/hkd1y` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-hkd1y-title |
+| Hibor人民币（隔夜） | `time/hongguan/hibor/cnhon` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnhon-title |
+| Hibor人民币（1周） | `time/hongguan/hibor/cnh1w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh1w-title |
+| Hibor人民币（2周） | `time/hongguan/hibor/cnh2w` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh2w-title |
+| Hibor人民币（1月） | `time/hongguan/hibor/cnh1m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh1m-title |
+| Hibor人民币（2月） | `time/hongguan/hibor/cnh2m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh2m-title |
+| Hibor人民币（3月） | `time/hongguan/hibor/cnh3m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh3m-title |
+| Hibor人民币（6月） | `time/hongguan/hibor/cnh6m` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh6m-title |
+| Hibor人民币（1年） | `time/hongguan/hibor/cnh1y` | 每天21:00。 | sjzx_hongguan-chajie/hongguan-hibor-cnh1y-title |
+| 农副指数 | `time/hongguan/hyzs/nfzs` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-nfzs-title |
+| 菜篮子产品批发价格指数 | `time/hongguan/hyzs/clz` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-clz-title |
+| 农产品批发价格总指数 | `time/hongguan/hyzs/ncp` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ncp-title |
+| 美原油指数CONC | `time/hongguan/hyzs/myy` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-myy-title |
+| 能源指数 | `time/hongguan/hyzs/ny` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ny-title |
+| 大宗商品价格指数 | `time/hongguan/hyzs/dzs` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-dzs-title |
+| 焦炭指数:综合 | `time/hongguan/hyzs/jt` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-jt-title |
+| 化工指数 | `time/hongguan/hyzs/hg` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-hg-title |
+| 钢铁指数 | `time/hongguan/hyzs/gt` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-gt-title |
+| 普钢指数:综合 | `time/hongguan/hyzs/pg` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-pg-title |
+| 铁矿石指数:综合 | `time/hongguan/hyzs/tk` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-tk-title |
+| 有色指数 | `time/hongguan/hyzs/ys` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ys-title |
+| 有色金属指数:镍 | `time/hongguan/hyzs/ysn` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ysn-title |
+| 有色金属指数:锌 | `time/hongguan/hyzs/ysx` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ysx-title |
+| 有色金属指数:铅 | `time/hongguan/hyzs/ysq` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ysq-title |
+| 有色金属指数:铝 | `time/hongguan/hyzs/ysl` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-ysl-title |
+| 有色金属指数:铜 | `time/hongguan/hyzs/yst` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-yst-title |
+| RPI:金银珠宝:环比 | `time/hongguan/hyzs/jb` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-jb-title |
+| 黄金指数 | `time/hongguan/hyzs/hj` | 每天21:00。 | sjzx_hyzs-dzsp/hyzs-hj-title |
+| 主要城市混凝土价格:C20:均价 | `time/hongguan/hyzs/hnt` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-hnt-title |
+| 建材指数 | `time/hongguan/hyzs/jc` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-jc-title |
+| 建材价格指数:总指数 | `time/hongguan/hyzs/jcz` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-jcz-title |
+| 生产资料价格指数:机械设备:定基数 | `time/hongguan/hyzs/scjx` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-scjx-title |
+| 中国玻璃综合指数 | `time/hongguan/hyzs/bl` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-bl-title |
+| 五金机电价格指数:总指数 | `time/hongguan/hyzs/wj` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-wj-title |
+| 新造船价格指数:CNTPI指数 | `time/hongguan/hyzs/xzc` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-xzc-title |
+| 永康五金交易价格指数:总指数 | `time/hongguan/hyzs/yk` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-yk-title |
+| GAIN.整体价格变换指数:汽车 | `time/hongguan/hyzs/gain` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-gain-title |
+| 生产资料价格指数:汽车:定基数 | `time/hongguan/hyzs/scqc` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-scqc-title |
+| 价格:VA:国产:50万IU/g:25kg | `time/hongguan/hyzs/va` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-va-title |
+| 中药材周价格定基指数 | `time/hongguan/hyzs/zyca` | 每天21:00。 | sjzx_hyzs-zzjc/hyzs-zyca-title |
+| 物流景气指数 | `time/hongguan/hyzs/wljq` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-wljq-title |
+| 民航货运量:当月值 | `time/hongguan/hyzs/mhhy` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-mhhy-title |
+| 民航客运量:当月值 | `time/hongguan/hyzs/mhky` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-mhky-title |
+| 全国主要港口:旅客吞吐量:当月值 | `time/hongguan/hyzs/gclk` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-gclk-title |
+| 全国主要港口:货物吞吐量:当月值 | `time/hongguan/hyzs/gchw` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-gchw-title |
+| 水运货运量:当月值 | `time/hongguan/hyzs/syhy` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-syhy-title |
+| 水运客运量:当月值 | `time/hongguan/hyzs/syky` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-syky-title |
+| 成品油运输指数（BCTI） | `time/hongguan/hyzs/bcti` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bcti-title |
+| 原油运输指数（BDTI） | `time/hongguan/hyzs/bdti` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bdti-title |
+| 超灵便型船运价指数（BSI） | `time/hongguan/hyzs/bsi` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bsi-title |
+| 海岬型运费指数（BCI） | `time/hongguan/hyzs/bci` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bci-title |
+| 巴拿马型运费指数（BPI） | `time/hongguan/hyzs/bpi` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bpi-title |
+| 波罗的海干散货指数（BDI） | `time/hongguan/hyzs/bdi` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-bdi-title |
+| 公路货运量:当月值 | `time/hongguan/hyzs/glhy` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-glhy-title |
+| 公路客运量:当月值 | `time/hongguan/hyzs/glky` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-glky-title |
+| 铁路货运量:当月值 | `time/hongguan/hyzs/tlhy` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-tlhy-title |
+| 铁路客运量:当月值 | `time/hongguan/hyzs/tlky` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-tlky-title |
+| 货运量总计:当月值 | `time/hongguan/hyzs/hy` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-hy-title |
+| 客运量总计:当月值 | `time/hongguan/hyzs/ky` | 每天21:00。 | sjzx_hyzs-jtys/hyzs-ky-title |
+| 费城半导体指数（SOX） | `time/hongguan/hyzs/sox` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-sox-title |
+| 义乌小商品指数:电子元器件:价格指数 | `time/hongguan/hyzs/ywdz` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-ywdz-title |
+| 华强北价格指数:综合指数 | `time/hongguan/hyzs/hqbzh` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-hqbzh-title |
+| 交易景气指数:安防产品 | `time/hongguan/hyzs/afjq` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-afjq-title |
+| 中关村电子产品价格指数:软件产品 | `time/hongguan/hyzs/zgrj` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-zgrj-title |
+| 华强北价格指数:综合指数 | `time/hongguan/hyzs/hqbxx` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-hqbxx-title |
+| 华强北价格指数:电子元器件 | `time/hongguan/hyzs/hqbdz` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-hqbdz-title |
+| 出口交货值:电气机械及器材制造业:当月值 | `time/hongguan/hyzs/ckjh` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-ckjh-title |
+| 交易价格指数:电子电工:电线、电缆:电气设备用电缆 | `time/hongguan/hyzs/dxdl` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-dxdl-title |
+| 手机出货量:当月值 | `time/hongguan/hyzs/sjch` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-sjch-title |
+| 中国电信:移动用户数:当月新增 | `time/hongguan/hyzs/dxyh` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-dxyh-title |
+| 用电量:工业:当月值 | `time/hongguan/hyzs/gydl` | 每天21:00。 | sjzx_hyzs-dzxx/hyzs-gydl-title |
+| 义乌小商品价格指数:工艺品类 | `time/hongguan/hyzs/ywgy` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-ywgy-title |
+| 国内新开业酒店数:三星级以上:合计 | `time/hongguan/hyzs/xyjd` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-xyjd-title |
+| 国内饭店餐饮收入比:当月值 | `time/hongguan/hyzs/fdcy` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-fdcy-title |
+| 国内饭店客房收入比:当月值 | `time/hongguan/hyzs/fdkf` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-fdkf-title |
+| 国内饭店平均房价（ADR平均）:当月值 | `time/hongguan/hyzs/adr` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-adr-title |
+| 全国百家重点大型零售企业商品零售额:当月同比 | `time/hongguan/hyzs/bjls` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-bjls-title |
+| 社会消费品零售总额:当月值 | `time/hongguan/hyzs/shxf` | 每天21:00。 | sjzx_hyzs-xffw/hyzs-shxf-title |
+| 国房景气指数 | `time/hongguan/hyzs/gfjq` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-gfjq-title |
+| 商品房销售额:当月值 | `time/hongguan/hyzs/spf` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-spf-title |
+| 房地产开发投资完成额:累计值 | `time/hongguan/hyzs/fdckf` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-fdckf-title |
+| 原保险保费收入:寿险合计 | `time/hongguan/hyzs/bxsf` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-bxsf-title |
+| 银行理财产品发行数量:当月值 | `time/hongguan/hyzs/yhlc` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-yhlc-title |
+| 证券市场交易结算资金余额:期末数 | `time/hongguan/hyzs/zjye` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-zjye-title |
+| 总资产:银行业金融机构 | `time/hongguan/hyzs/yhzzc` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-yhzzc-title |
+| 城镇固定资产投资:电信、广播电视和卫星传输服务:全国:累计值 | `time/hongguan/hyzs/czdx` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-czdx-title |
+| 城镇固定资产投资完成额:水利、环境和公共设施管理业:累计值 | `time/hongguan/hyzs/czsl` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-czsl-title |
+| 固定资产投资完成额:电力、煤气、及水的生产和供应业:累计值 | `time/hongguan/hyzs/gzdl` | 每天21:00。 | sjzx_hyzs-jrfc/hyzs-gzdl-title |
 
 ## 基金（71 个数据集）
 
@@ -311,72 +457,104 @@
 | 托管银行 | `all/jjsjzx/tgyh` | 每天20:30。 | jijinHq_jijin-pingji-jigou/jijin-tgyh-title |
 | 代销机构 | `all/jjsjzx/dxjg/{参数}` | 每天20:30。 | jijinHq_jijin-pingji-jigou/jijin-dxjg-title |
 
-## 港股（31 个数据集）
+## 港股（40 个数据集）
 
 > 港股列表、实时行情(2秒)、F10全档案、财务分析、K线24种级别
 
 | 数据集 | 本地路径 | 更新频率 | 文档锚点 |
 |---|---|---|---|
 | 港股列表 | `base/gphk` | 每天0点。 | indexHk_hk-gplist/gupiao-gplbjk-title |
-| 证券资料 | `time/hk/f10/secinfo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-secinfo-title |
-| 公司资料 | `time/hk/f10/orgprofile/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-org-title |
-| 首发资料 | `time/hk/f10/ipo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-ipo-title |
-| 窝轮 | `time/hk/f10/warrant/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-warrant-title |
-| 熊牛证 | `time/hk/f10/cbbc/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-cbbc-title |
-| 董事会成员 | `time/hk/f10/board/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-board-title |
-| 管理层成员 | `time/hk/f10/manager/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-manager-title |
-| 业务展望 | `time/hk/f10/businessexpectation/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-profile/hk-profile-outlook-title |
-| 主要指标 | `time/hk/f10/finmainindex/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-mainindex-title |
-| 资产负债表 | `time/hk/f10/balance/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-balance-title |
-| 利润表 | `time/hk/f10/profit/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-income-title |
-| 现金流量表 | `time/hk/f10/cashflow/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-finance/hk-finance-cashflow-title |
-| 历史股本变化 | `time/hk/f10/equitychange/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-change-title |
-| 董事及股东权益 | `time/hk/f10/holder/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-holder-title |
-| 历史股权变动（董事增减持） | `time/hk/f10/shequitychg/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-equity/hk-equity-shchg-title |
-| 投资评级 | `time/hk/f10/rating/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-rating-title |
-| 市场表现对比 | `time/hk/f10/industrymarket/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-market-title |
-| 成长性对比 | `time/hk/f10/industrygrowth/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-growth-title |
-| 估值对比 | `time/hk/f10/industryvaluation/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-valuation-title |
-| 规模对比 | `time/hk/f10/industryscale/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-industry/hk-industry-scale-title |
-| 大事提醒 | `time/hk/f10/corporateevent/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-reminder-title |
-| 分红派息 | `time/hk/f10/dividend/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-dividend-title |
-| 股票回购 | `time/hk/f10/repo/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-repo-title |
-| 拆股合并 | `time/hk/f10/splitmerge/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-split-title |
-| 相关公告 | `time/hk/f10/notice/{股票代码}` | 每天17:30，耗时约10个小时。 | indexHk_hk-events/hk-events-notice-title |
+| 证券资料 | `time/hk/f10/secinfo/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-secinfo-title |
+| 公司资料 | `time/hk/f10/orgprofile/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-org-title |
+| 首发资料 | `time/hk/f10/ipo/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-ipo-title |
+| 窝轮 | `time/hk/f10/warrant/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-warrant-title |
+| 熊牛证 | `time/hk/f10/cbbc/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-cbbc-title |
+| 董事会成员 | `time/hk/f10/board/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-board-title |
+| 管理层成员 | `time/hk/f10/manager/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-manager-title |
+| 业务展望 | `time/hk/f10/businessexpectation/{股票代码}` | 每天17:30。 | indexHk_hk-profile/hk-profile-outlook-title |
+| 主要指标 | `time/hk/f10/finmainindex/{股票代码}` | 每天17:30。 | indexHk_hk-finance/hk-finance-mainindex-title |
+| 资产负债表 | `time/hk/f10/balance/{股票代码}` | 每天17:30。 | indexHk_hk-finance/hk-finance-balance-title |
+| 利润表 | `time/hk/f10/profit/{股票代码}` | 每天17:30。 | indexHk_hk-finance/hk-finance-income-title |
+| 现金流量表 | `time/hk/f10/cashflow/{股票代码}` | 每天17:30。 | indexHk_hk-finance/hk-finance-cashflow-title |
+| 历史股本变化 | `time/hk/f10/equitychange/{股票代码}` | 每天17:30。 | indexHk_hk-equity/hk-equity-change-title |
+| 董事及股东权益 | `time/hk/f10/holder/{股票代码}` | 每天17:30。 | indexHk_hk-equity/hk-equity-holder-title |
+| 历史股权变动（董事增减持） | `time/hk/f10/shequitychg/{股票代码}` | 每天17:30。 | indexHk_hk-equity/hk-equity-shchg-title |
+| 投资评级 | `time/hk/f10/rating/{股票代码}` | 每天17:30。 | indexHk_hk-industry/hk-industry-rating-title |
+| 市场表现对比 | `time/hk/f10/industrymarket/{股票代码}` | 每天17:30。 | indexHk_hk-industry/hk-industry-market-title |
+| 成长性对比 | `time/hk/f10/industrygrowth/{股票代码}` | 每天17:30。 | indexHk_hk-industry/hk-industry-growth-title |
+| 估值对比 | `time/hk/f10/industryvaluation/{股票代码}` | 每天17:30。 | indexHk_hk-industry/hk-industry-valuation-title |
+| 规模对比 | `time/hk/f10/industryscale/{股票代码}` | 每天17:30。 | indexHk_hk-industry/hk-industry-scale-title |
+| 大事提醒 | `time/hk/f10/corporateevent/{股票代码}` | 每天17:30。 | indexHk_hk-events/hk-events-reminder-title |
+| 分红派息 | `time/hk/f10/dividend/{股票代码}` | 每天17:30。 | indexHk_hk-events/hk-events-dividend-title |
+| 股票回购 | `time/hk/f10/repo/{股票代码}` | 每天17:30。 | indexHk_hk-events/hk-events-repo-title |
+| 拆股合并 | `time/hk/f10/splitmerge/{股票代码}` | 每天17:30。 | indexHk_hk-events/hk-events-split-title |
+| 相关公告 | `time/hk/f10/notice/{股票代码}` | 每天17:30。 | indexHk_hk-events/hk-events-notice-title |
 | 实时行情数据（2秒落盘） | `time/hk/real/{股票或指数代码}` | 交易时间段每10秒。 | indexHk_hk-realtime/hk-rt-trace-title |
 | 当天分时成交明细 | `time/hk/real/trace/onebyone/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-onebyone-title |
 | 当天分钟分时成交 | `time/hk/real/trace/timedeal/{股票代码}` | 交易时间段每2分钟。 | indexHk_hk-realtime/hk-rt-trace-timedeal-title |
 | 最新K线 | `time/hk/real/time/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别盘后16:30更新。 | indexHk_hk-kline/hk-kline-new |
 | 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/hk/history/trade/{股票或指数代码}/{分时级别}` | 分钟级别盘中每10秒更新，日线及以上级别每天16:30更新。 | indexHk_hk-kline/hk-kline-his |
+| 中国香港消费者物价指数 | `time/hk/hongguan/cpi` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-cpi-title |
+| 中国香港消费者物价指数年率 | `time/hk/hongguan/cpiyoy` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-cpi-yoy-title |
+| 中国香港失业率 | `time/hk/hongguan/syl` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-syl-title |
+| 中国香港GDP | `time/hk/hongguan/gdp` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-gdp-title |
+| 中国香港GDP同比 | `time/hk/hongguan/gdpyoy` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-gdp-yoy-title |
+| 中国香港楼宇买卖合约数量 | `time/hk/hongguan/lysl` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-lysl-title |
+| 中国香港楼宇买卖合约成交金额 | `time/hk/hongguan/lycje` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-lycje-title |
+| 中国香港商品贸易差额年率 | `time/hk/hongguan/myce` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-myce-title |
+| 中国香港制造业PPI年率 | `time/hk/hongguan/ppiyoy` | 每天17:00。 | indexHk_hk-hongguan/hk-hongguan-ppi-yoy-title |
 
-## 美股（25 个数据集）
+## 美股（48 个数据集）
 
 > 美股列表、实时行情、F10全档案、财务分析、K线
 
 | 数据集 | 本地路径 | 更新频率 | 文档锚点 |
 |---|---|---|---|
 | 美股列表 | `base/gpus` | 美东时间每天0点。 | indexUs_us-gplist/us-gplist-title |
-| 证券资料 | `time/us/f10/secinfo/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-secinfo-title |
-| 公司资料 | `time/us/f10/orgprofile/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-orgprofile-title |
-| 主营构成 | `time/us/f10/maincompose/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-maincompose-title |
-| 高管研究 | `time/us/f10/executive/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-executive-title |
-| 卖空明细 | `time/us/f10/short/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-short-title |
-| 机构评级 | `time/us/f10/rating/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_profile/us_profile-rating-title |
-| 主要指标 | `time/us/f10/finmainindex/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-mainindex-title |
-| 资产负债表 | `time/us/f10/balance/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-balance-title |
-| 综合损益表 | `time/us/f10/income/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-income-title |
-| 现金流量表 | `time/us/f10/cashflow/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_finance/us_finance-cashflow-title |
-| 股本变动 | `time/us/f10/equitychange/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-equitychange-title |
-| 拆股并股 | `time/us/f10/stocksplit/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-stocksplit-title |
-| 董事及股东权益 | `time/us/f10/holder/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-holder-title |
-| 机构持股 | `time/us/f10/orghold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-orghold-title |
-| 基金持股 | `time/us/f10/fundhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-fundhold-title |
-| 高管持股 | `time/us/f10/leaderhold/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-leaderhold-title |
-| 机构明细 | `time/us/f10/orgdetail/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_equity/us_equity-orgdetail-title |
-| 大事提醒 | `time/us/f10/gsds/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_events/us_events-gsds-title |
-| 分红派息 | `time/us/f10/dividend/{股票代码}` | 每天美东时间18:00，耗时约10个小时。 | indexUs_us_events/us_events-dividend-title |
+| 证券资料 | `time/us/f10/secinfo/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-secinfo-title |
+| 公司资料 | `time/us/f10/orgprofile/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-orgprofile-title |
+| 主营构成 | `time/us/f10/maincompose/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-maincompose-title |
+| 高管研究 | `time/us/f10/executive/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-executive-title |
+| 卖空明细 | `time/us/f10/short/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-short-title |
+| 机构评级 | `time/us/f10/rating/{股票代码}` | 每天美东时间18:00。 | indexUs_us_profile/us_profile-rating-title |
+| 主要指标 | `time/us/f10/finmainindex/{股票代码}` | 每天美东时间18:00。 | indexUs_us_finance/us_finance-mainindex-title |
+| 资产负债表 | `time/us/f10/balance/{股票代码}` | 每天美东时间18:00。 | indexUs_us_finance/us_finance-balance-title |
+| 综合损益表 | `time/us/f10/income/{股票代码}` | 每天美东时间18:00。 | indexUs_us_finance/us_finance-income-title |
+| 现金流量表 | `time/us/f10/cashflow/{股票代码}` | 每天美东时间18:00。 | indexUs_us_finance/us_finance-cashflow-title |
+| 股本变动 | `time/us/f10/equitychange/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-equitychange-title |
+| 拆股并股 | `time/us/f10/stocksplit/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-stocksplit-title |
+| 董事及股东权益 | `time/us/f10/holder/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-holder-title |
+| 机构持股 | `time/us/f10/orghold/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-orghold-title |
+| 基金持股 | `time/us/f10/fundhold/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-fundhold-title |
+| 高管持股 | `time/us/f10/leaderhold/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-leaderhold-title |
+| 机构明细 | `time/us/f10/orgdetail/{股票代码}` | 每天美东时间18:00。 | indexUs_us_equity/us_equity-orgdetail-title |
+| 大事提醒 | `time/us/f10/gsds/{股票代码}` | 每天美东时间18:00。 | indexUs_us_events/us_events-gsds-title |
+| 分红派息 | `time/us/f10/dividend/{股票代码}` | 每天美东时间18:00。 | indexUs_us_events/us_events-dividend-title |
 | 实时行情数据（3秒落盘） | `time/us/real/us_{代码}` | 交易时间段（美东时间）每10秒。 | indexUs_us-realtime/us-rt-trace-title |
 | 当天分时成交明细 | `time/us/real/time/trace/onebyone/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-onebyone-title |
 | 当天分钟分时成交 | `time/us/real/time/trace/timedeal/us_{代码}` | 交易时间段每2分钟。 | indexUs_us-realtime/us-rt-trace-timedeal-title |
 | 最新K线 | `time/us/real/time/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别盘后16:30（美东时间）更新。 | indexUs_us-kline/us-kline-new |
 | 历史K线（数据范围：短分时4万根，日线及以上所有） | `time/us/history/trade/us_{代码}/{级别}` | 分钟级别盘中（美东时间）每10秒更新，日线及以上级别每天16:30（美东时间）更新。 | indexUs_us-kline/us-kline-his |
+| 美国ISM制造业指数 | `time/us/hongguan/ism` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-ism-title |
+| 美国ISM非制造业指数 | `time/us/hongguan/ismnm` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-ismnm-title |
+| 美国非农就业人数变化 | `time/us/hongguan/fnl` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-fnl-title |
+| 美国贸易帐 | `time/us/hongguan/my` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-my-title |
+| 美国失业率 | `time/us/hongguan/syl` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-syl-title |
+| 美国未决房屋销售月率 | `time/us/hongguan/wyfw` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-wyfw-title |
+| 美国生产者物价指数月率 | `time/us/hongguan/ppimy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-ppimy-title |
+| 美国核心生产者物价指数月率 | `time/us/hongguan/hxppimy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxppimy-title |
+| 美国核心生产者物价指数年率 | `time/us/hongguan/hxppiny` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxppiny-title |
+| 美国核心零售销售月率 | `time/us/hongguan/hxlsm` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxlsm-title |
+| 美国零售销售月率 | `time/us/hongguan/lsm` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-lsm-title |
+| 美国消费者物价指数月率 | `time/us/hongguan/cpimy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-cpimy-title |
+| 美国消费者物价指数年率 | `time/us/hongguan/cpiny` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-cpiny-title |
+| 美国核心消费者物价指数月率 | `time/us/hongguan/hxcpimy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxcpimy-title |
+| 美国核心消费者物价指数年率 | `time/us/hongguan/hxcpiny` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxcpiny-title |
+| 美国新屋开工 | `time/us/hongguan/xwkg` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-xwkg-title |
+| 美国密歇根消费者信心指数初值 | `time/us/hongguan/mxg` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-mxg-title |
+| 美国成屋销售 | `time/us/hongguan/cws` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-cws-title |
+| 美国耐用品订单月率 | `time/us/hongguan/nypmy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-nypmy-title |
+| 美国耐用品订单月率(除运输外) | `time/us/hongguan/hxnypmy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-hxnypmy-title |
+| 美国咨商会消费者信心指数 | `time/us/hongguan/zhs` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-zhs-title |
+| 美国GDP年率初值 | `time/us/hongguan/gdpy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-gdpy-title |
+| 美国央行公布利率决议（上限） | `time/us/hongguan/lvjy` | 每天美东时间18:00。 | indexUs_us-hongguan/us-hongguan-lvjy-title |
