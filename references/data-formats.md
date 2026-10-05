@@ -40,7 +40,7 @@
 |---|---|---|
 | dm | string | 代码 |
 | mc | string | 名称 |
-| t | string | 更新时间（yyyy-MM-ddHH:mm:ss） |
+| t | string | 更新时间（yyyy-MM-dd HH:mm:ss） |
 | p | number | 当前价格（元） |
 | yc | number | 昨收价（元） |
 | o | number | 开盘价（元） |
@@ -88,18 +88,18 @@
 | z5 | number | 5日涨幅（%） |
 | z10 | number | 10日涨幅（%） |
 | z60 | number | 60日涨幅（%） |
-| sud | string | 数据时间（yyyy-MM-ddHH:mm:ss） |
+| sud | string | 数据时间（yyyy-MM-dd HH:mm:ss） |
 | jabl | number | 连续竞价买入上限（元，涨停价约束） |
 | jasl | number | 连续竞价卖出下限（元，跌停价约束） |
 | javr | number | 竞价昨比（集合竞价量与昨日同期量的比值） |
 | ah | string | AH股对应代码（A股对应H股代码） |
-| c10 | number | 日内涨幅%10:00 |
-| c1030 | number | 日内涨幅%10:30 |
-| c11 | number | 日内涨幅%11:00 |
-| c1130 | number | 日内涨幅%11:30 |
-| c1330 | number | 日内涨幅%13:30 |
-| c14 | number | 日内涨幅%14:00 |
-| c1430 | number | 日内涨幅%14:30 |
+| c10 | number | 日内涨幅% 10:00 |
+| c1030 | number | 日内涨幅% 10:30 |
+| c11 | number | 日内涨幅% 11:00 |
+| c1130 | number | 日内涨幅% 11:30 |
+| c1330 | number | 日内涨幅% 13:30 |
+| c14 | number | 日内涨幅% 14:00 |
+| c1430 | number | 日内涨幅% 14:30 |
 
 
 ### 最新K线
@@ -108,7 +108,7 @@
 
 | 字段 | 类型 | 说明 |
 |---|---|---|
-| d | string | 交易时间（短分时级别格式为yyyy-MM-ddHH:mm，日线及以上级别为yyyy-MM-dd） |
+| d | string | 交易时间（短分时级别格式为yyyy-MM-dd HH:mm，日线及以上级别为yyyy-MM-dd） |
 | o | number | 开盘价（元） |
 | h | number | 最高价（元） |
 | l | number | 最低价（元） |
@@ -120,7 +120,7 @@
 | zd | number | 涨跌幅（%） |
 | zde | number | 涨跌额（元） |
 | zs | number | 昨收价（元） |
-| ud | string | 更新时间（短分时级别格式为yyyy-MM-ddHH:mm:ss） |
+| ud | string | 更新时间（短分时级别格式为yyyy-MM-dd HH:mm:ss） |
 
 > **实测校正**（基于真实落盘数据样本，A股与港股 K线键集合一致）：最新 K线 JSON 中昨收价的实际键名为 `zs`（上表照录官网文档的 `sz` 与落盘不符，取值以落盘的 `zs` 为准，数值经 收盘价/(1+涨跌幅%) 反推核验一致）；落盘数据另含官网文档未列出的键 `ltgb`（流通股本，股）。按文档字段名取值为空时，先核对本地 JSON 的实际键名。
 
